@@ -13,10 +13,10 @@ def s1.hello2
 end
 
 p s1.hello
-p s1.hello2
+p s1.hello2 # s1だけに紐づくメソッド
 
 p s2.hello
-#p s2.hello2
+#p s2.hello2 # s1だけに紐づくメソッド
 
 # クラスメソッド・・・特定のクラス(というオブジェクト)に定義するメソッド
 def SingletonMethod.hello6
@@ -41,7 +41,8 @@ class SingletonMethod2 < SingletonMethod
 end
 
 p SingletonMethod.hello3
+p SingletonMethod.hello6
 p SingletonMethod2.hello4
 p SingletonMethod2.hello5
 p SingletonMethod2.hello3 # 継承元のクラスメソッドも使える
-p SingletonMethod2.hello6
+p SingletonMethod2.hello6 # 継承元のクラスメソッドも使える

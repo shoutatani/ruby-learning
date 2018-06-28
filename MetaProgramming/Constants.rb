@@ -3,6 +3,7 @@ module TestModule
   C_1 = "a"
   class TestClass
     C_2 = "b"
+    p Module.nesting # passの取得ができる
   end
 end
 
